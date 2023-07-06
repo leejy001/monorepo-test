@@ -1,3 +1,3 @@
-export const sayHello = () => {
-  return "hello from lib";
+export const sayHello = (title: string) => {
+  return `hello from lib ${title}`;
 };

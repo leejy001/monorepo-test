@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@packages/lib": "workspace:^",
+    "@packages/ui": "workspace:^",
     "@types/node": "20.4.0",
     "@types/react": "18.2.14",
     "@types/react-dom": "18.2.6",

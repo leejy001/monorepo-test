@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import { sayHello } from "@packages/lib";
+import { Button } from "@packages/ui";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,7 +24,7 @@ export default function Home() {
           </p>
           <p>
             의존성 테스트&nbsp;
-            <code className={styles.code}>{sayHello()}</code>
+            <code className={styles.code}>{sayHello("app")}</code>
           </p>
           <div>
             <a
@@ -43,7 +44,7 @@ export default function Home() {
             </a>
           </div>
         </div>
-
+        <Button>Hello From @wanted/ui</Button>
         <div className={styles.center}>
           <Image
             className={styles.logo}

@@ -26,6 +26,7 @@ __metadata:
   resolution: "@client/web@workspace:apps/client"
   dependencies:
     "@packages/lib": "workspace:^"
+    "@packages/ui": "workspace:^"
     "@types/node": 20.4.0
     "@types/react": 18.2.14
     "@types/react-dom": 18.2.6
@@ -219,6 +220,19 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@packages/ui@workspace:^, @packages/ui@workspace:packages/ui":
+  version: 0.0.0-use.local
+  resolution: "@packages/ui@workspace:packages/ui"
+  dependencies:
+    "@types/node": ^20.4.0
+    "@types/react": ^18.2.14
+    "@types/react-dom": ^18.2.6
+    react: ^18.2.0
+    react-dom: ^18.2.0
+    typescript: ^5.1.6
+  languageName: unknown
+  linkType: soft
+
 "@pkgr/utils@npm:^2.3.1":
   version: 2.4.1
   resolution: "@pkgr/utils@npm:2.4.1"
@@ -263,7 +277,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:20.4.0":
+"@types/node@npm:20.4.0, @types/node@npm:^20.4.0":
   version: 20.4.0
   resolution: "@types/node@npm:20.4.0"
   checksum: 8ad632ee131611651fc5f4ac3a47427640e2492ab314fe1c4d0c3b97af71784ef48c53221d5f9922aab4724375dcb4f33137b3107ba2c356d9366216a31678aa
@@ -277,7 +291,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:18.2.6":
+"@types/react-dom@npm:18.2.6, @types/react-dom@npm:^18.2.6":
   version: 18.2.6
   resolution: "@types/react-dom@npm:18.2.6"
   dependencies:
@@ -286,7 +300,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:18.2.14":
+"@types/react@npm:*, @types/react@npm:18.2.14, @types/react@npm:^18.2.14":
   version: 18.2.14
   resolution: "@types/react@npm:18.2.14"
   dependencies:
@@ -2454,7 +2468,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-dom@npm:18.2.0":
+"react-dom@npm:18.2.0, react-dom@npm:^18.2.0":
   version: 18.2.0
   resolution: "react-dom@npm:18.2.0"
   dependencies:
@@ -2473,7 +2487,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:18.2.0":
+"react@npm:18.2.0, react@npm:^18.2.0":
   version: 18.2.0
   resolution: "react@npm:18.2.0"
   dependencies:
