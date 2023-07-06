@@ -1,0 +1,9 @@
+{
+  "name": "monorepo-test",
+  "packageManager": "yarn@3.6.1",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}
