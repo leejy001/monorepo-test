@@ -18,12 +18,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       {\
         "name": "@client/web",\
         "reference": "workspace:apps/client"\
+      },\
+      {\
+        "name": "@packages/lib",\
+        "reference": "workspace:packages/lib"\
       }\
     ],\
     "enableTopLevelFallback": true,\
     "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
     "fallbackExclusionList": [\
       ["@client/web", ["workspace:apps/client"]],\
+      ["@packages/lib", ["workspace:packages/lib"]],\
       ["monorepo-test", ["workspace:."]]\
     ],\
     "fallbackPool": [\
@@ -62,6 +67,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./apps/client/",\
           "packageDependencies": [\
             ["@client/web", "workspace:apps/client"],\
+            ["@packages/lib", "workspace:packages/lib"],\
             ["@types/node", "npm:20.4.0"],\
             ["@types/react", "npm:18.2.14"],\
             ["@types/react-dom", "npm:18.2.6"],\
@@ -293,6 +299,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["fastq", "npm:1.15.0"]\
           ],\
           "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@packages/lib", [\
+        ["workspace:packages/lib", {\
+          "packageLocation": "./packages/lib/",\
+          "packageDependencies": [\
+            ["@packages/lib", "workspace:packages/lib"],\
+            ["typescript", "patch:typescript@npm%3A5.1.6#~builtin<compat/typescript>::version=5.1.6&hash=5da071"]\
+          ],\
+          "linkType": "SOFT"\
         }]\
       ]],\
       ["@pkgr/utils", [\

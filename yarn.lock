@@ -25,6 +25,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@client/web@workspace:apps/client"
   dependencies:
+    "@packages/lib": "workspace:^"
     "@types/node": 20.4.0
     "@types/react": 18.2.14
     "@types/react-dom": 18.2.6
@@ -209,6 +210,14 @@ __metadata:
   checksum: 190c643f156d8f8f277bf2a6078af1ffde1fd43f498f187c2db24d35b4b4b5785c02c7dc52e356497b9a1b65b13edc996de08de0b961c32844364da02986dc53
   languageName: node
   linkType: hard
+
+"@packages/lib@workspace:^, @packages/lib@workspace:packages/lib":
+  version: 0.0.0-use.local
+  resolution: "@packages/lib@workspace:packages/lib"
+  dependencies:
+    typescript: ^5.1.6
+  languageName: unknown
+  linkType: soft
 
 "@pkgr/utils@npm:^2.3.1":
   version: 2.4.1
