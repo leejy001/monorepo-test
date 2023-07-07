@@ -2,6 +2,7 @@ import { ButtonHTMLAttributes, MouseEventHandler, ReactNode } from 'react';
 
 export type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   children: ReactNode,
+  varient: 'contained' | 'outlined',
   onClick?: MouseEventHandler<HTMLButtonElement>,
 };
 

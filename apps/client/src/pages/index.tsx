@@ -44,7 +44,7 @@ export default function Home() {
             </a>
           </div>
         </div>
-        <Button>Hello From @wanted/ui</Button>
+        <Button varient="contained">Hello From @wanted/ui</Button>
         <div className={styles.center}>
           <Image
             className={styles.logo}
